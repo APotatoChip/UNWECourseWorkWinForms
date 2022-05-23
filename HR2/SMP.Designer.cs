@@ -68,7 +68,7 @@
             this.button_Clear = new System.Windows.Forms.Button();
             this.button_Search = new System.Windows.Forms.Button();
             this.statusTableAdapter1 = new HR2.CourseDatabaseDataSetTableAdapters.StatusTableAdapter();
-            this.btnBack = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.jobBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.courseDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource1)).BeginInit();
@@ -197,7 +197,7 @@
             this.candidatesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.candidatesBindingNavigator.Name = "candidatesBindingNavigator";
             this.candidatesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.candidatesBindingNavigator.Size = new System.Drawing.Size(1048, 27);
+            this.candidatesBindingNavigator.Size = new System.Drawing.Size(1050, 27);
             this.candidatesBindingNavigator.TabIndex = 4;
             this.candidatesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -253,7 +253,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -407,22 +406,27 @@
             // 
             this.statusTableAdapter1.ClearBeforeFill = true;
             // 
-            // btnBack
+            // button1
             // 
-            this.btnBack.Location = new System.Drawing.Point(851, 482);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(115, 31);
-            this.btnBack.TabIndex = 9;
-            this.btnBack.Text = "Back to Menu";
-            this.btnBack.UseVisualStyleBackColor = true;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(836, 469);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(130, 57);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Back to Menu";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // SMP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 525);
-            this.Controls.Add(this.btnBack);
+            this.ClientSize = new System.Drawing.Size(1050, 538);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Search);
             this.Controls.Add(this.button_Clear);
             this.Controls.Add(this.button_Excel);
@@ -491,6 +495,6 @@
         private CourseDatabaseDataSetTableAdapters.StatusTableAdapter statusTableAdapter1;
         private CourseDatabaseDataSet courseDatabaseDataSet1;
         private System.Windows.Forms.BindingSource statusBindingSource1;
-        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button button1;
     }
 }

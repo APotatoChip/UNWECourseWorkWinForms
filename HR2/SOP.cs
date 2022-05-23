@@ -31,7 +31,19 @@ namespace HR2
         {
             // TODO: This line of code loads data into the 'courseDatabaseDataSet.Candidates' table. You can move, or remove it, as needed.
             this.candidatesTableAdapter.Fill(this.courseDatabaseDataSet.Candidates);
+            this.WindowState = FormWindowState.Maximized;
+            this.candidatesDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 8);
+            this.candidatesDataGridView.DefaultCellStyle.Font = new Font("Century Gothic", 10);
+            this.candidatesDataGridView.DefaultCellStyle.ForeColor = Color.FromArgb(41, 44, 51);
+            sizeDGV(candidatesDataGridView);
 
+        }
+        void sizeDGV(DataGridView dgv)
+        {
+            DataGridViewElementStates states = DataGridViewElementStates.None;
+            dgv.ScrollBars = ScrollBars.Vertical;
+            var totalWidth = dgv.Columns.GetColumnsWidth(states) + dgv.RowHeadersWidth;
+            dgv.ClientSize = new Size(totalWidth, 266);
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -59,6 +71,16 @@ namespace HR2
                 this.candidatesBindingSource.Filter = sb.ToString();
                 this.candidatesTableAdapter.Fill(this.courseDatabaseDataSet.Candidates);
             }
+        }
+
+        private void candidatesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void SOPlabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

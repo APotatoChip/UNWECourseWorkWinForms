@@ -31,10 +31,13 @@ namespace HR2
         {
             // TODO: This line of code loads data into the 'courseDatabaseDataSet.Job' table. You can move, or remove it, as needed.
             this.jobTableAdapter.Fill(this.courseDatabaseDataSet.Job);
+            this.WindowState = FormWindowState.Maximized;
 
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+     
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             mainScreenForm.Show();

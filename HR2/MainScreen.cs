@@ -94,5 +94,10 @@ namespace HR2
             this.Hide();
             md.Show();
         }
+
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
