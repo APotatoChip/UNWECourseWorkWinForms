@@ -10,19 +10,21 @@ using System.Windows.Forms;
 
 namespace HR2
 {
-    public partial class hr2 : Form
+    public partial class mainScreen : Form
     {
         SMP smp;
         SOP sop;
-        MD md;
+        JobCandidatesMD jobCandidatesMD;
+        JobInterviewsMD jobInterviewsMD;
         CandidatesAED candidatesAED;
         JobsAED jobsAED;
-        public hr2()
+        public mainScreen()
         {
             InitializeComponent();
             smp = new SMP(this);
             sop = new SOP(this);
-            md = new MD(this);
+            jobCandidatesMD = new JobCandidatesMD(this);
+            jobInterviewsMD = new JobInterviewsMD(this);
             candidatesAED = new CandidatesAED(this);
             jobsAED = new JobsAED(this);
         }
@@ -40,30 +42,33 @@ namespace HR2
             // TODO: This line of code loads data into the 'courseDatabaseDataSet.Candidates' table. You can move, or remove it, as needed.
             this.candidatesTableAdapter.Fill(this.courseDatabaseDataSet.Candidates);
             Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.FromArgb(41, 44, 51);
+            menuLabel.Left = (this.ClientSize.Width - menuLabel.Width) / 2;
+            candidatesFormBtn.Left = (this.ClientSize.Width - candidatesFormBtn.Width) / 2;
+            SMP.Left = (this.ClientSize.Width - SMP.Width) / 2;
+            SOP.Left = (this.ClientSize.Width - SOP.Width) / 2;
+            jobsFormBtn.Left = (this.ClientSize.Width - jobsFormBtn.Width) / 2;
+            jobCandidatesBtn.Left = (this.ClientSize.Width - jobCandidatesBtn.Width) / 2;
+            jobInterviewsbtn.Left = (this.ClientSize.Width - jobInterviewsbtn.Width) / 2;
+            exitBtn.Left = (this.ClientSize.Width - exitBtn.Width -2) ;
+            //label3.Top = (this.ClientSize.Height - label3.Height) / 2;
 
         }
 
-        private void candidatesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void AED_Click(object sender, EventArgs e)
+        private void candidatesFormBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
             candidatesAED.Show();
         }
 
-        private void SMP_Click(object sender, EventArgs e)
+        private void jobsFormBtn_Click(object sender, EventArgs e)
         {
-           
+            this.Hide();
+            jobsAED.Show();
+        }
+        private void SMP_Click(object sender, EventArgs e)
+        {           
             this.Hide();
             smp.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void SOP_Click(object sender, EventArgs e)
@@ -72,32 +77,22 @@ namespace HR2
             sop.Show();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void jobsAED_Click(object sender, EventArgs e)
+        private void jobInterviewsbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            jobsAED.Show();
-
+            jobInterviewsMD.Show();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void mdBtn_Click(object sender, EventArgs e)
+        private void jobCandidatesBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            md.Show();
+            jobCandidatesMD.Show();
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
     }
 }

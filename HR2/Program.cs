@@ -16,7 +16,7 @@ namespace HR2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new hr2());
+            Application.Run(new mainScreen());
         }
     }
 }

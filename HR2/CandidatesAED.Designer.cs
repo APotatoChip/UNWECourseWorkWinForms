@@ -87,63 +87,77 @@
             // candidateIDLabel
             // 
             candidateIDLabel.AutoSize = true;
+            candidateIDLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            candidateIDLabel.ForeColor = System.Drawing.Color.White;
             candidateIDLabel.Location = new System.Drawing.Point(32, 99);
             candidateIDLabel.Name = "candidateIDLabel";
-            candidateIDLabel.Size = new System.Drawing.Size(93, 17);
+            candidateIDLabel.Size = new System.Drawing.Size(107, 19);
             candidateIDLabel.TabIndex = 1;
             candidateIDLabel.Text = "Candidate ID:";
             // 
             // nameLabel
             // 
             nameLabel.AutoSize = true;
+            nameLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nameLabel.ForeColor = System.Drawing.Color.White;
             nameLabel.Location = new System.Drawing.Point(32, 127);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(49, 17);
+            nameLabel.Size = new System.Drawing.Size(55, 19);
             nameLabel.TabIndex = 3;
             nameLabel.Text = "Name:";
             // 
             // phoneLabel
             // 
             phoneLabel.AutoSize = true;
+            phoneLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            phoneLabel.ForeColor = System.Drawing.Color.White;
             phoneLabel.Location = new System.Drawing.Point(32, 155);
             phoneLabel.Name = "phoneLabel";
-            phoneLabel.Size = new System.Drawing.Size(53, 17);
+            phoneLabel.Size = new System.Drawing.Size(57, 19);
             phoneLabel.TabIndex = 5;
             phoneLabel.Text = "Phone:";
             // 
             // addressLabel
             // 
             addressLabel.AutoSize = true;
+            addressLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            addressLabel.ForeColor = System.Drawing.Color.White;
             addressLabel.Location = new System.Drawing.Point(32, 183);
             addressLabel.Name = "addressLabel";
-            addressLabel.Size = new System.Drawing.Size(64, 17);
+            addressLabel.Size = new System.Drawing.Size(65, 19);
             addressLabel.TabIndex = 7;
             addressLabel.Text = "Address:";
             // 
             // countryLabel
             // 
             countryLabel.AutoSize = true;
+            countryLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            countryLabel.ForeColor = System.Drawing.Color.White;
             countryLabel.Location = new System.Drawing.Point(32, 211);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(61, 17);
+            countryLabel.Size = new System.Drawing.Size(68, 19);
             countryLabel.TabIndex = 9;
             countryLabel.Text = "Country:";
             // 
             // jobIDLabel
             // 
             jobIDLabel.AutoSize = true;
+            jobIDLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            jobIDLabel.ForeColor = System.Drawing.Color.White;
             jobIDLabel.Location = new System.Drawing.Point(32, 239);
             jobIDLabel.Name = "jobIDLabel";
-            jobIDLabel.Size = new System.Drawing.Size(52, 17);
+            jobIDLabel.Size = new System.Drawing.Size(56, 19);
             jobIDLabel.TabIndex = 11;
             jobIDLabel.Text = "Job ID:";
             // 
             // statusLabel
             // 
             statusLabel.AutoSize = true;
+            statusLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            statusLabel.ForeColor = System.Drawing.Color.White;
             statusLabel.Location = new System.Drawing.Point(32, 267);
             statusLabel.Name = "statusLabel";
-            statusLabel.Size = new System.Drawing.Size(52, 17);
+            statusLabel.Size = new System.Drawing.Size(54, 19);
             statusLabel.TabIndex = 13;
             statusLabel.Text = "Status:";
             // 
@@ -173,6 +187,7 @@
             // candidatesBindingNavigator
             // 
             this.candidatesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.candidatesBindingNavigator.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
             this.candidatesBindingNavigator.BindingSource = this.candidatesBindingSource;
             this.candidatesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
             this.candidatesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
@@ -197,7 +212,7 @@
             this.candidatesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.candidatesBindingNavigator.Name = "candidatesBindingNavigator";
             this.candidatesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.candidatesBindingNavigator.Size = new System.Drawing.Size(1208, 27);
+            this.candidatesBindingNavigator.Size = new System.Drawing.Size(1208, 31);
             this.candidatesBindingNavigator.TabIndex = 0;
             this.candidatesBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -207,13 +222,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -223,7 +238,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -232,7 +247,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -241,18 +256,19 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
@@ -262,7 +278,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -270,7 +286,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -279,20 +295,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // candidatesBindingNavigatorSaveItem
             // 
             this.candidatesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.candidatesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("candidatesBindingNavigatorSaveItem.Image")));
             this.candidatesBindingNavigatorSaveItem.Name = "candidatesBindingNavigatorSaveItem";
-            this.candidatesBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.candidatesBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.candidatesBindingNavigatorSaveItem.Text = "Save Data";
             this.candidatesBindingNavigatorSaveItem.Click += new System.EventHandler(this.candidatesBindingNavigatorSaveItem_Click);
             // 
@@ -356,6 +372,7 @@
             // candidatesDataGridView
             // 
             this.candidatesDataGridView.AutoGenerateColumns = false;
+            this.candidatesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.candidatesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.candidatesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -450,6 +467,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1208, 514);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.candidatesDataGridView);

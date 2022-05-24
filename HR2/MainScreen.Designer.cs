@@ -1,6 +1,6 @@
 ﻿namespace HR2
 {
-    partial class hr2
+    partial class mainScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -33,13 +33,14 @@
             this.candidatesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.candidatesTableAdapter = new HR2.CourseDatabaseDataSetTableAdapters.CandidatesTableAdapter();
             this.tableAdapterManager = new HR2.CourseDatabaseDataSetTableAdapters.TableAdapterManager();
-            this.AED = new System.Windows.Forms.Button();
+            this.candidatesFormBtn = new System.Windows.Forms.Button();
             this.SMP = new System.Windows.Forms.Button();
             this.SOP = new System.Windows.Forms.Button();
             this.jobsFormBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.mdBtn = new System.Windows.Forms.Button();
+            this.menuLabel = new System.Windows.Forms.Label();
+            this.jobCandidatesBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
+            this.jobInterviewsbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.courseDatabaseDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -67,29 +68,29 @@
             this.tableAdapterManager.JobTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = HR2.CourseDatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
-            // AED
+            // candidatesFormBtn
             // 
-            this.AED.BackColor = System.Drawing.Color.White;
-            this.AED.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AED.Location = new System.Drawing.Point(632, 225);
-            this.AED.Margin = new System.Windows.Forms.Padding(4);
-            this.AED.Name = "AED";
-            this.AED.Size = new System.Drawing.Size(288, 58);
-            this.AED.TabIndex = 1;
-            this.AED.Text = "Candidates Form";
-            this.AED.UseVisualStyleBackColor = false;
-            this.AED.Click += new System.EventHandler(this.AED_Click);
+            this.candidatesFormBtn.BackColor = System.Drawing.Color.White;
+            this.candidatesFormBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.candidatesFormBtn.Location = new System.Drawing.Point(416, 144);
+            this.candidatesFormBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.candidatesFormBtn.Name = "candidatesFormBtn";
+            this.candidatesFormBtn.Size = new System.Drawing.Size(288, 58);
+            this.candidatesFormBtn.TabIndex = 1;
+            this.candidatesFormBtn.Text = "Candidates Form";
+            this.candidatesFormBtn.UseVisualStyleBackColor = false;
+            this.candidatesFormBtn.Click += new System.EventHandler(this.candidatesFormBtn_Click);
             // 
             // SMP
             // 
             this.SMP.BackColor = System.Drawing.Color.White;
             this.SMP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SMP.Location = new System.Drawing.Point(632, 448);
+            this.SMP.Location = new System.Drawing.Point(416, 405);
             this.SMP.Margin = new System.Windows.Forms.Padding(4);
             this.SMP.Name = "SMP";
             this.SMP.Size = new System.Drawing.Size(288, 58);
             this.SMP.TabIndex = 2;
-            this.SMP.Text = "By Multiple Params";
+            this.SMP.Text = "Search by Multiple Params";
             this.SMP.UseVisualStyleBackColor = false;
             this.SMP.Click += new System.EventHandler(this.SMP_Click);
             // 
@@ -97,12 +98,12 @@
             // 
             this.SOP.BackColor = System.Drawing.Color.White;
             this.SOP.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SOP.Location = new System.Drawing.Point(632, 531);
+            this.SOP.Location = new System.Drawing.Point(416, 471);
             this.SOP.Margin = new System.Windows.Forms.Padding(4);
             this.SOP.Name = "SOP";
             this.SOP.Size = new System.Drawing.Size(288, 58);
             this.SOP.TabIndex = 4;
-            this.SOP.Text = "By One Param";
+            this.SOP.Text = "Search by One Param";
             this.SOP.UseVisualStyleBackColor = false;
             this.SOP.Click += new System.EventHandler(this.SOP_Click);
             // 
@@ -110,40 +111,39 @@
             // 
             this.jobsFormBtn.BackColor = System.Drawing.Color.White;
             this.jobsFormBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.jobsFormBtn.Location = new System.Drawing.Point(632, 294);
+            this.jobsFormBtn.Location = new System.Drawing.Point(416, 210);
             this.jobsFormBtn.Margin = new System.Windows.Forms.Padding(4);
             this.jobsFormBtn.Name = "jobsFormBtn";
             this.jobsFormBtn.Size = new System.Drawing.Size(288, 58);
             this.jobsFormBtn.TabIndex = 7;
             this.jobsFormBtn.Text = "Jobs Form";
             this.jobsFormBtn.UseVisualStyleBackColor = false;
-            this.jobsFormBtn.Click += new System.EventHandler(this.jobsAED_Click);
+            this.jobsFormBtn.Click += new System.EventHandler(this.jobsFormBtn_Click);
             // 
-            // label3
+            // menuLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
-            this.label3.Location = new System.Drawing.Point(641, 90);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(288, 58);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Main Menu";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.menuLabel.AutoSize = true;
+            this.menuLabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
+            this.menuLabel.Font = new System.Drawing.Font("Century Gothic", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menuLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
+            this.menuLabel.Location = new System.Drawing.Point(416, 47);
+            this.menuLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.menuLabel.Name = "menuLabel";
+            this.menuLabel.Size = new System.Drawing.Size(288, 58);
+            this.menuLabel.TabIndex = 8;
+            this.menuLabel.Text = "Main Menu";
             // 
-            // mdBtn
+            // jobCandidatesBtn
             // 
-            this.mdBtn.BackColor = System.Drawing.Color.White;
-            this.mdBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mdBtn.Location = new System.Drawing.Point(632, 370);
-            this.mdBtn.Name = "mdBtn";
-            this.mdBtn.Size = new System.Drawing.Size(288, 58);
-            this.mdBtn.TabIndex = 10;
-            this.mdBtn.Text = "mdBtn";
-            this.mdBtn.UseVisualStyleBackColor = false;
-            this.mdBtn.Click += new System.EventHandler(this.mdBtn_Click);
+            this.jobCandidatesBtn.BackColor = System.Drawing.Color.White;
+            this.jobCandidatesBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobCandidatesBtn.Location = new System.Drawing.Point(416, 276);
+            this.jobCandidatesBtn.Name = "jobCandidatesBtn";
+            this.jobCandidatesBtn.Size = new System.Drawing.Size(288, 58);
+            this.jobCandidatesBtn.TabIndex = 10;
+            this.jobCandidatesBtn.Text = "Job Candidates MD";
+            this.jobCandidatesBtn.UseVisualStyleBackColor = false;
+            this.jobCandidatesBtn.Click += new System.EventHandler(this.jobCandidatesBtn_Click);
             // 
             // exitBtn
             // 
@@ -151,7 +151,7 @@
             this.exitBtn.FlatAppearance.BorderSize = 0;
             this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Location = new System.Drawing.Point(1457, 2);
+            this.exitBtn.Location = new System.Drawing.Point(1082, 1);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(73, 55);
             this.exitBtn.TabIndex = 12;
@@ -159,24 +159,37 @@
             this.exitBtn.UseVisualStyleBackColor = false;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // hr2
+            // jobInterviewsbtn
+            // 
+            this.jobInterviewsbtn.BackColor = System.Drawing.Color.White;
+            this.jobInterviewsbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobInterviewsbtn.Location = new System.Drawing.Point(416, 340);
+            this.jobInterviewsbtn.Name = "jobInterviewsbtn";
+            this.jobInterviewsbtn.Size = new System.Drawing.Size(288, 58);
+            this.jobInterviewsbtn.TabIndex = 14;
+            this.jobInterviewsbtn.Text = "Job Interviews MD";
+            this.jobInterviewsbtn.UseVisualStyleBackColor = false;
+            this.jobInterviewsbtn.Click += new System.EventHandler(this.jobInterviewsbtn_Click);
+            // 
+            // mainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1641, 647);
+            this.ClientSize = new System.Drawing.Size(1157, 586);
+            this.Controls.Add(this.jobInterviewsbtn);
             this.Controls.Add(this.exitBtn);
-            this.Controls.Add(this.mdBtn);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.jobCandidatesBtn);
+            this.Controls.Add(this.menuLabel);
             this.Controls.Add(this.jobsFormBtn);
             this.Controls.Add(this.SOP);
             this.Controls.Add(this.SMP);
-            this.Controls.Add(this.AED);
+            this.Controls.Add(this.candidatesFormBtn);
             this.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "hr2";
+            this.Name = "mainScreen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Screen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -194,13 +207,14 @@
         private System.Windows.Forms.BindingSource candidatesBindingSource;
         private CourseDatabaseDataSetTableAdapters.CandidatesTableAdapter candidatesTableAdapter;
         private CourseDatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.Button AED;
+        private System.Windows.Forms.Button candidatesFormBtn;
         private System.Windows.Forms.Button SMP;
         private System.Windows.Forms.Button SOP;
         private System.Windows.Forms.Button jobsFormBtn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button mdBtn;
+        private System.Windows.Forms.Label menuLabel;
+        private System.Windows.Forms.Button jobCandidatesBtn;
         private System.Windows.Forms.Button exitBtn;
+        private System.Windows.Forms.Button jobInterviewsbtn;
     }
 }
 

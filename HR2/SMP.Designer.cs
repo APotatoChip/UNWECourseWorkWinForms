@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SMP));
             this.cbJobtitle = new System.Windows.Forms.ComboBox();
             this.jobBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.courseDatabaseDataSet = new HR2.CourseDatabaseDataSet();
@@ -43,19 +42,6 @@
             this.candidatesTableAdapter = new HR2.CourseDatabaseDataSetTableAdapters.CandidatesTableAdapter();
             this.tableAdapterManager = new HR2.CourseDatabaseDataSetTableAdapters.TableAdapterManager();
             this.jobTableAdapter = new HR2.CourseDatabaseDataSetTableAdapters.JobTableAdapter();
-            this.candidatesBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.candidatesBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.candidatesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -75,8 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.courseDatabaseDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingNavigator)).BeginInit();
-            this.candidatesBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.candidatesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -133,18 +117,22 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(52, 63);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 17);
+            this.label1.Size = new System.Drawing.Size(78, 21);
             this.label1.TabIndex = 2;
             this.label1.Text = "Job Title";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(52, 112);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 17);
+            this.label2.Size = new System.Drawing.Size(61, 21);
             this.label2.TabIndex = 3;
             this.label2.Text = "Status";
             // 
@@ -170,134 +158,10 @@
             // 
             this.jobTableAdapter.ClearBeforeFill = true;
             // 
-            // candidatesBindingNavigator
-            // 
-            this.candidatesBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.candidatesBindingNavigator.BindingSource = this.candidatesBindingSource;
-            this.candidatesBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.candidatesBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.candidatesBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.candidatesBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.candidatesBindingNavigatorSaveItem});
-            this.candidatesBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.candidatesBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.candidatesBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.candidatesBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.candidatesBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.candidatesBindingNavigator.Name = "candidatesBindingNavigator";
-            this.candidatesBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.candidatesBindingNavigator.Size = new System.Drawing.Size(1050, 27);
-            this.candidatesBindingNavigator.TabIndex = 4;
-            this.candidatesBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorAddNewItem.Text = "Add new";
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorDeleteItem.Text = "Delete";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Move first";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Move previous";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Position";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Current position";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Move next";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Move last";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // candidatesBindingNavigatorSaveItem
-            // 
-            this.candidatesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.candidatesBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("candidatesBindingNavigatorSaveItem.Image")));
-            this.candidatesBindingNavigatorSaveItem.Name = "candidatesBindingNavigatorSaveItem";
-            this.candidatesBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
-            this.candidatesBindingNavigatorSaveItem.Text = "Save Data";
-            this.candidatesBindingNavigatorSaveItem.Click += new System.EventHandler(this.candidatesBindingNavigatorSaveItem_Click);
-            // 
             // candidatesDataGridView
             // 
             this.candidatesDataGridView.AutoGenerateColumns = false;
+            this.candidatesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.candidatesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.candidatesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -374,32 +238,47 @@
             // 
             // button_Excel
             // 
+            this.button_Excel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.button_Excel.FlatAppearance.BorderSize = 0;
+            this.button_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Excel.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Excel.ForeColor = System.Drawing.Color.White;
             this.button_Excel.Location = new System.Drawing.Point(741, 63);
             this.button_Excel.Name = "button_Excel";
-            this.button_Excel.Size = new System.Drawing.Size(75, 23);
+            this.button_Excel.Size = new System.Drawing.Size(89, 43);
             this.button_Excel.TabIndex = 6;
             this.button_Excel.Text = "Excel";
-            this.button_Excel.UseVisualStyleBackColor = true;
+            this.button_Excel.UseVisualStyleBackColor = false;
             this.button_Excel.Click += new System.EventHandler(this.button_Excel_Click);
             // 
             // button_Clear
             // 
-            this.button_Clear.Location = new System.Drawing.Point(323, 83);
+            this.button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.button_Clear.FlatAppearance.BorderSize = 0;
+            this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Clear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Clear.ForeColor = System.Drawing.Color.White;
+            this.button_Clear.Location = new System.Drawing.Point(323, 56);
             this.button_Clear.Name = "button_Clear";
-            this.button_Clear.Size = new System.Drawing.Size(75, 23);
+            this.button_Clear.Size = new System.Drawing.Size(75, 28);
             this.button_Clear.TabIndex = 7;
             this.button_Clear.Text = "Clear";
-            this.button_Clear.UseVisualStyleBackColor = true;
+            this.button_Clear.UseVisualStyleBackColor = false;
             this.button_Clear.Click += new System.EventHandler(this.button_Clear_Click);
             // 
             // button_Search
             // 
-            this.button_Search.Location = new System.Drawing.Point(323, 112);
+            this.button_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.button_Search.FlatAppearance.BorderSize = 0;
+            this.button_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_Search.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_Search.ForeColor = System.Drawing.Color.White;
+            this.button_Search.Location = new System.Drawing.Point(323, 109);
             this.button_Search.Name = "button_Search";
-            this.button_Search.Size = new System.Drawing.Size(75, 23);
+            this.button_Search.Size = new System.Drawing.Size(75, 26);
             this.button_Search.TabIndex = 8;
             this.button_Search.Text = "Search";
-            this.button_Search.UseVisualStyleBackColor = true;
+            this.button_Search.UseVisualStyleBackColor = false;
             this.button_Search.Click += new System.EventHandler(this.button_Search_Click);
             // 
             // statusTableAdapter1
@@ -425,13 +304,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.ClientSize = new System.Drawing.Size(1050, 538);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button_Search);
             this.Controls.Add(this.button_Clear);
             this.Controls.Add(this.button_Excel);
             this.Controls.Add(this.candidatesDataGridView);
-            this.Controls.Add(this.candidatesBindingNavigator);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cbStatus);
@@ -446,9 +325,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.courseDatabaseDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.statusBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingNavigator)).EndInit();
-            this.candidatesBindingNavigator.ResumeLayout(false);
-            this.candidatesBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.candidatesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -465,19 +341,6 @@
         private System.Windows.Forms.BindingSource candidatesBindingSource;
         private CourseDatabaseDataSetTableAdapters.CandidatesTableAdapter candidatesTableAdapter;
         private CourseDatabaseDataSetTableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator candidatesBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton candidatesBindingNavigatorSaveItem;
         private CourseDatabaseDataSetTableAdapters.JobTableAdapter jobTableAdapter;
         private System.Windows.Forms.DataGridView candidatesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;

@@ -12,8 +12,8 @@ namespace HR2
 {
     public partial class SOP : Form
     {
-        hr2 mainScreenForm;
-        public SOP(hr2 formMainScreen)
+        mainScreen mainScreenForm;
+        public SOP(mainScreen formMainScreen)
         {
             InitializeComponent();
             mainScreenForm = formMainScreen;
@@ -63,10 +63,18 @@ namespace HR2
             else
             {
                 sb.AppendFormat("Name like '%{0}%'", sopTextBox.Text);
+                sb.AppendFormat(" or Country like '%{0}%'", sopTextBox.Text);
+                sb.AppendFormat(" or Status like '%{0}%'", sopTextBox.Text);
+                sb.AppendFormat(" or Address like '%{0}%'", sopTextBox.Text);
+                sb.AppendFormat(" or Phone like '%{0}%'", sopTextBox.Text);
                 if (decimal.TryParse(sopTextBox.Text, out decimal valueNum))
                 {
                     sb.AppendFormat(" or JobID={0}", valueNum);
+                    sb.AppendFormat(" or CandidateID={0}", valueNum);
                 }
+                   
+              
+                
                 this.candidatesBindingSource.DataSource = this.courseDatabaseDataSet.Candidates;
                 this.candidatesBindingSource.Filter = sb.ToString();
                 this.candidatesTableAdapter.Fill(this.courseDatabaseDataSet.Candidates);

@@ -1,6 +1,6 @@
 ﻿namespace HR2
 {
-    partial class JobsAED
+    partial class JobCandidatesMD
     {
         /// <summary>
         /// Required designer variable.
@@ -35,11 +35,12 @@
             System.Windows.Forms.Label numberOfCandidatesLabel;
             System.Windows.Forms.Label salaryLabel;
             System.Windows.Forms.Label interviewIDLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobsAED));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JobCandidatesMD));
             this.courseDatabaseDataSet = new HR2.CourseDatabaseDataSet();
             this.jobBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jobTableAdapter = new HR2.CourseDatabaseDataSetTableAdapters.JobTableAdapter();
             this.tableAdapterManager = new HR2.CourseDatabaseDataSetTableAdapters.TableAdapterManager();
+            this.candidatesTableAdapter = new HR2.CourseDatabaseDataSetTableAdapters.CandidatesTableAdapter();
             this.jobBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
@@ -59,13 +60,15 @@
             this.numberOfCandidatesTextBox = new System.Windows.Forms.TextBox();
             this.salaryTextBox = new System.Windows.Forms.TextBox();
             this.interviewIDTextBox = new System.Windows.Forms.TextBox();
-            this.jobDataGridView = new System.Windows.Forms.DataGridView();
+            this.candidatesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.candidatesDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             jobIDLabel = new System.Windows.Forms.Label();
             titleLabel = new System.Windows.Forms.Label();
@@ -77,7 +80,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.jobBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobBindingNavigator)).BeginInit();
             this.jobBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jobDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candidatesDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // jobIDLabel
@@ -85,10 +89,10 @@
             jobIDLabel.AutoSize = true;
             jobIDLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             jobIDLabel.ForeColor = System.Drawing.Color.White;
-            jobIDLabel.Location = new System.Drawing.Point(12, 78);
+            jobIDLabel.Location = new System.Drawing.Point(16, 86);
             jobIDLabel.Name = "jobIDLabel";
             jobIDLabel.Size = new System.Drawing.Size(56, 19);
-            jobIDLabel.TabIndex = 18;
+            jobIDLabel.TabIndex = 1;
             jobIDLabel.Text = "Job ID:";
             // 
             // titleLabel
@@ -96,10 +100,10 @@
             titleLabel.AutoSize = true;
             titleLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             titleLabel.ForeColor = System.Drawing.Color.White;
-            titleLabel.Location = new System.Drawing.Point(12, 106);
+            titleLabel.Location = new System.Drawing.Point(16, 114);
             titleLabel.Name = "titleLabel";
             titleLabel.Size = new System.Drawing.Size(38, 19);
-            titleLabel.TabIndex = 20;
+            titleLabel.TabIndex = 3;
             titleLabel.Text = "Title:";
             // 
             // descriptionLabel
@@ -107,10 +111,10 @@
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             descriptionLabel.ForeColor = System.Drawing.Color.White;
-            descriptionLabel.Location = new System.Drawing.Point(12, 134);
+            descriptionLabel.Location = new System.Drawing.Point(16, 142);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(89, 19);
-            descriptionLabel.TabIndex = 22;
+            descriptionLabel.TabIndex = 5;
             descriptionLabel.Text = "Description:";
             // 
             // numberOfCandidatesLabel
@@ -118,10 +122,10 @@
             numberOfCandidatesLabel.AutoSize = true;
             numberOfCandidatesLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             numberOfCandidatesLabel.ForeColor = System.Drawing.Color.White;
-            numberOfCandidatesLabel.Location = new System.Drawing.Point(12, 162);
+            numberOfCandidatesLabel.Location = new System.Drawing.Point(16, 170);
             numberOfCandidatesLabel.Name = "numberOfCandidatesLabel";
             numberOfCandidatesLabel.Size = new System.Drawing.Size(174, 19);
-            numberOfCandidatesLabel.TabIndex = 24;
+            numberOfCandidatesLabel.TabIndex = 7;
             numberOfCandidatesLabel.Text = "Number Of Candidates:";
             // 
             // salaryLabel
@@ -129,10 +133,10 @@
             salaryLabel.AutoSize = true;
             salaryLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             salaryLabel.ForeColor = System.Drawing.Color.White;
-            salaryLabel.Location = new System.Drawing.Point(12, 190);
+            salaryLabel.Location = new System.Drawing.Point(16, 198);
             salaryLabel.Name = "salaryLabel";
             salaryLabel.Size = new System.Drawing.Size(55, 19);
-            salaryLabel.TabIndex = 26;
+            salaryLabel.TabIndex = 9;
             salaryLabel.Text = "Salary:";
             // 
             // interviewIDLabel
@@ -140,10 +144,10 @@
             interviewIDLabel.AutoSize = true;
             interviewIDLabel.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             interviewIDLabel.ForeColor = System.Drawing.Color.White;
-            interviewIDLabel.Location = new System.Drawing.Point(12, 218);
+            interviewIDLabel.Location = new System.Drawing.Point(16, 226);
             interviewIDLabel.Name = "interviewIDLabel";
             interviewIDLabel.Size = new System.Drawing.Size(92, 19);
-            interviewIDLabel.TabIndex = 28;
+            interviewIDLabel.TabIndex = 11;
             interviewIDLabel.Text = "Interview ID:";
             // 
             // courseDatabaseDataSet
@@ -163,11 +167,15 @@
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.CandidatesTableAdapter = null;
+            this.tableAdapterManager.CandidatesTableAdapter = this.candidatesTableAdapter;
             this.tableAdapterManager.DeadlinesTableAdapter = null;
             this.tableAdapterManager.InterviewTableAdapter = null;
             this.tableAdapterManager.JobTableAdapter = this.jobTableAdapter;
             this.tableAdapterManager.UpdateOrder = HR2.CourseDatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // candidatesTableAdapter
+            // 
+            this.candidatesTableAdapter.ClearBeforeFill = true;
             // 
             // jobBindingNavigator
             // 
@@ -197,8 +205,8 @@
             this.jobBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.jobBindingNavigator.Name = "jobBindingNavigator";
             this.jobBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.jobBindingNavigator.Size = new System.Drawing.Size(1252, 27);
-            this.jobBindingNavigator.TabIndex = 18;
+            this.jobBindingNavigator.Size = new System.Drawing.Size(1232, 31);
+            this.jobBindingNavigator.TabIndex = 0;
             this.jobBindingNavigator.Text = "bindingNavigator1";
             // 
             // bindingNavigatorAddNewItem
@@ -207,7 +215,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
@@ -254,6 +262,7 @@
             this.bindingNavigatorPositionItem.AccessibleName = "Position";
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -299,75 +308,81 @@
             // jobIDTextBox
             // 
             this.jobIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "JobID", true));
-            this.jobIDTextBox.Location = new System.Drawing.Point(174, 75);
+            this.jobIDTextBox.Location = new System.Drawing.Point(178, 83);
             this.jobIDTextBox.Name = "jobIDTextBox";
             this.jobIDTextBox.Size = new System.Drawing.Size(100, 22);
-            this.jobIDTextBox.TabIndex = 19;
+            this.jobIDTextBox.TabIndex = 2;
             // 
             // titleTextBox
             // 
             this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Title", true));
-            this.titleTextBox.Location = new System.Drawing.Point(174, 103);
+            this.titleTextBox.Location = new System.Drawing.Point(178, 111);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(100, 22);
-            this.titleTextBox.TabIndex = 21;
+            this.titleTextBox.TabIndex = 4;
             // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(174, 131);
+            this.descriptionTextBox.Location = new System.Drawing.Point(178, 139);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(100, 22);
-            this.descriptionTextBox.TabIndex = 23;
+            this.descriptionTextBox.TabIndex = 6;
             // 
             // numberOfCandidatesTextBox
             // 
             this.numberOfCandidatesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "NumberOfCandidates", true));
-            this.numberOfCandidatesTextBox.Location = new System.Drawing.Point(174, 159);
+            this.numberOfCandidatesTextBox.Location = new System.Drawing.Point(178, 167);
             this.numberOfCandidatesTextBox.Name = "numberOfCandidatesTextBox";
             this.numberOfCandidatesTextBox.Size = new System.Drawing.Size(100, 22);
-            this.numberOfCandidatesTextBox.TabIndex = 25;
+            this.numberOfCandidatesTextBox.TabIndex = 8;
             // 
             // salaryTextBox
             // 
             this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Salary", true));
-            this.salaryTextBox.Location = new System.Drawing.Point(174, 187);
+            this.salaryTextBox.Location = new System.Drawing.Point(178, 195);
             this.salaryTextBox.Name = "salaryTextBox";
             this.salaryTextBox.Size = new System.Drawing.Size(100, 22);
-            this.salaryTextBox.TabIndex = 27;
+            this.salaryTextBox.TabIndex = 10;
             // 
             // interviewIDTextBox
             // 
             this.interviewIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "InterviewID", true));
-            this.interviewIDTextBox.Location = new System.Drawing.Point(174, 215);
+            this.interviewIDTextBox.Location = new System.Drawing.Point(178, 223);
             this.interviewIDTextBox.Name = "interviewIDTextBox";
             this.interviewIDTextBox.Size = new System.Drawing.Size(100, 22);
-            this.interviewIDTextBox.TabIndex = 29;
+            this.interviewIDTextBox.TabIndex = 12;
             // 
-            // jobDataGridView
+            // candidatesBindingSource
             // 
-            this.jobDataGridView.AutoGenerateColumns = false;
-            this.jobDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
-            this.jobDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.jobDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.candidatesBindingSource.DataMember = "FK_Candidates_Job";
+            this.candidatesBindingSource.DataSource = this.jobBindingSource;
+            // 
+            // candidatesDataGridView
+            // 
+            this.candidatesDataGridView.AutoGenerateColumns = false;
+            this.candidatesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.candidatesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.candidatesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.jobDataGridView.DataSource = this.jobBindingSource;
-            this.jobDataGridView.Location = new System.Drawing.Point(345, 75);
-            this.jobDataGridView.Name = "jobDataGridView";
-            this.jobDataGridView.RowHeadersWidth = 51;
-            this.jobDataGridView.RowTemplate.Height = 24;
-            this.jobDataGridView.Size = new System.Drawing.Size(804, 230);
-            this.jobDataGridView.TabIndex = 29;
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7});
+            this.candidatesDataGridView.DataSource = this.candidatesBindingSource;
+            this.candidatesDataGridView.Location = new System.Drawing.Point(417, 87);
+            this.candidatesDataGridView.Name = "candidatesDataGridView";
+            this.candidatesDataGridView.RowHeadersWidth = 51;
+            this.candidatesDataGridView.RowTemplate.Height = 24;
+            this.candidatesDataGridView.Size = new System.Drawing.Size(478, 324);
+            this.candidatesDataGridView.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
             // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "JobID";
-            this.dataGridViewTextBoxColumn1.HeaderText = "JobID";
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "CandidateID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "CandidateID";
             this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
             this.dataGridViewTextBoxColumn1.ReadOnly = true;
@@ -375,43 +390,51 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Title";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Title";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Name";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 125;
             // 
             // dataGridViewTextBoxColumn3
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Description";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Description";
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Phone";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Phone";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.Width = 125;
             // 
             // dataGridViewTextBoxColumn4
             // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "NumberOfCandidates";
-            this.dataGridViewTextBoxColumn4.HeaderText = "NumberOfCandidates";
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Address";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Address";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.Width = 125;
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Salary";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Salary";
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Country";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Country";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 125;
             // 
             // dataGridViewTextBoxColumn6
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "InterviewID";
-            this.dataGridViewTextBoxColumn6.HeaderText = "InterviewID";
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "JobID";
+            this.dataGridViewTextBoxColumn6.HeaderText = "JobID";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.Width = 125;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Status";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Status";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.Width = 125;
             // 
             // button1
             // 
@@ -420,22 +443,22 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(1019, 354);
+            this.button1.Location = new System.Drawing.Point(765, 443);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 57);
-            this.button1.TabIndex = 30;
+            this.button1.TabIndex = 31;
             this.button1.Text = "Back to Menu";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // JobsAED
+            // MD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(1252, 450);
+            this.ClientSize = new System.Drawing.Size(1232, 550);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.jobDataGridView);
+            this.Controls.Add(this.candidatesDataGridView);
             this.Controls.Add(jobIDLabel);
             this.Controls.Add(this.jobIDTextBox);
             this.Controls.Add(titleLabel);
@@ -450,21 +473,24 @@
             this.Controls.Add(this.interviewIDTextBox);
             this.Controls.Add(this.jobBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "JobsAED";
-            this.Text = "JobsAED";
-            this.Load += new System.EventHandler(this.JobsAED_Load);
+            this.Name = "MD";
+            this.Text = "MD";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.MD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.courseDatabaseDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jobBindingNavigator)).EndInit();
             this.jobBindingNavigator.ResumeLayout(false);
             this.jobBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jobDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candidatesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.candidatesDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
         private CourseDatabaseDataSet courseDatabaseDataSet;
         private System.Windows.Forms.BindingSource jobBindingSource;
         private CourseDatabaseDataSetTableAdapters.JobTableAdapter jobTableAdapter;
@@ -488,13 +514,16 @@
         private System.Windows.Forms.TextBox numberOfCandidatesTextBox;
         private System.Windows.Forms.TextBox salaryTextBox;
         private System.Windows.Forms.TextBox interviewIDTextBox;
-        private System.Windows.Forms.DataGridView jobDataGridView;
+        private CourseDatabaseDataSetTableAdapters.CandidatesTableAdapter candidatesTableAdapter;
+        private System.Windows.Forms.BindingSource candidatesBindingSource;
+        private System.Windows.Forms.DataGridView candidatesDataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.Button button1;
     }
 }

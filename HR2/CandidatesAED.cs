@@ -12,8 +12,8 @@ namespace HR2
 {
     public partial class CandidatesAED : Form
     {
-        hr2 mainScreenForm;
-        public CandidatesAED(hr2 formMainScreen)
+        mainScreen mainScreenForm;
+        public CandidatesAED(mainScreen formMainScreen)
         {
             InitializeComponent();
             mainScreenForm = formMainScreen;
@@ -32,7 +32,9 @@ namespace HR2
             // TODO: This line of code loads data into the 'courseDatabaseDataSet.Candidates' table. You can move, or remove it, as needed.
             this.candidatesTableAdapter.Fill(this.courseDatabaseDataSet.Candidates);
             this.WindowState = FormWindowState.Maximized;
-
+            this.candidatesDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 8);
+            this.candidatesDataGridView.DefaultCellStyle.Font = new Font("Century Gothic", 10);
+            this.candidatesDataGridView.DefaultCellStyle.ForeColor = Color.FromArgb(41, 44, 51);
         }
 
    

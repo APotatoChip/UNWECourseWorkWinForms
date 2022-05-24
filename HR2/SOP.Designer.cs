@@ -80,7 +80,7 @@
             this.SOPlabel.AutoSize = true;
             this.SOPlabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.SOPlabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SOPlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
+            this.SOPlabel.ForeColor = System.Drawing.Color.White;
             this.SOPlabel.Location = new System.Drawing.Point(44, 70);
             this.SOPlabel.Name = "SOPlabel";
             this.SOPlabel.Size = new System.Drawing.Size(199, 23);

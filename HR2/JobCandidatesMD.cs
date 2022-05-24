@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace HR2
 {
-    public partial class MD : Form
+    public partial class JobCandidatesMD : Form
     {
-        hr2 mainScreenForm;
-        public MD(hr2 formMainScreen)
+        mainScreen mainScreenForm;
+        public JobCandidatesMD(mainScreen formMainScreen)
         {
             InitializeComponent();
             mainScreenForm = formMainScreen;

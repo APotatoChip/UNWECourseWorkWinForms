@@ -19,7 +19,6 @@ C:\Users\LENOVO\Downloads\HR2\HR2\bin\Debug\HR2.exe
 C:\Users\LENOVO\Downloads\HR2\HR2\bin\Debug\HR2.pdb
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.csprojAssemblyReference.cache
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.csproj.ResolveComReference.cache
-C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.hr2.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.Properties.Resources.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.SMP.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.csproj.GenerateResource.cache
@@ -27,4 +26,6 @@ C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.csproj.CoreCompileInputs.cache
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.CandidatesAED.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.JobsAED.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.SOP.resources
-C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.MD.resources
+C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.JobCandidatesMD.resources
+C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.JobInterviewsMD.resources
+C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.mainScreen.resources
