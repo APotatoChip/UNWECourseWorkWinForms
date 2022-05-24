@@ -247,7 +247,7 @@
             // jobIDTextBox
             // 
             this.jobIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "JobID", true));
-            this.jobIDTextBox.Location = new System.Drawing.Point(189, 59);
+            this.jobIDTextBox.Location = new System.Drawing.Point(223, 59);
             this.jobIDTextBox.Name = "jobIDTextBox";
             this.jobIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.jobIDTextBox.TabIndex = 2;
@@ -266,7 +266,7 @@
             // titleTextBox
             // 
             this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Title", true));
-            this.titleTextBox.Location = new System.Drawing.Point(189, 87);
+            this.titleTextBox.Location = new System.Drawing.Point(223, 87);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(100, 22);
             this.titleTextBox.TabIndex = 4;
@@ -285,7 +285,7 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(189, 115);
+            this.descriptionTextBox.Location = new System.Drawing.Point(223, 115);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(100, 22);
             this.descriptionTextBox.TabIndex = 6;
@@ -304,7 +304,7 @@
             // numberOfCandidatesTextBox
             // 
             this.numberOfCandidatesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "NumberOfCandidates", true));
-            this.numberOfCandidatesTextBox.Location = new System.Drawing.Point(189, 143);
+            this.numberOfCandidatesTextBox.Location = new System.Drawing.Point(223, 143);
             this.numberOfCandidatesTextBox.Name = "numberOfCandidatesTextBox";
             this.numberOfCandidatesTextBox.Size = new System.Drawing.Size(100, 22);
             this.numberOfCandidatesTextBox.TabIndex = 8;
@@ -323,7 +323,7 @@
             // salaryTextBox
             // 
             this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Salary", true));
-            this.salaryTextBox.Location = new System.Drawing.Point(189, 171);
+            this.salaryTextBox.Location = new System.Drawing.Point(223, 171);
             this.salaryTextBox.Name = "salaryTextBox";
             this.salaryTextBox.Size = new System.Drawing.Size(100, 22);
             this.salaryTextBox.TabIndex = 10;
@@ -342,7 +342,7 @@
             // interviewIDTextBox
             // 
             this.interviewIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "InterviewID", true));
-            this.interviewIDTextBox.Location = new System.Drawing.Point(189, 199);
+            this.interviewIDTextBox.Location = new System.Drawing.Point(223, 199);
             this.interviewIDTextBox.Name = "interviewIDTextBox";
             this.interviewIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.interviewIDTextBox.TabIndex = 12;
@@ -368,11 +368,11 @@
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.interviewDataGridView.DataSource = this.interviewBindingSource;
-            this.interviewDataGridView.Location = new System.Drawing.Point(353, 30);
+            this.interviewDataGridView.Location = new System.Drawing.Point(371, 48);
             this.interviewDataGridView.Name = "interviewDataGridView";
             this.interviewDataGridView.RowHeadersWidth = 51;
             this.interviewDataGridView.RowTemplate.Height = 24;
-            this.interviewDataGridView.Size = new System.Drawing.Size(300, 220);
+            this.interviewDataGridView.Size = new System.Drawing.Size(548, 220);
             this.interviewDataGridView.TabIndex = 13;
             // 
             // dataGridViewTextBoxColumn1
@@ -423,7 +423,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBack.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnBack.Location = new System.Drawing.Point(549, 306);
+            this.btnBack.Location = new System.Drawing.Point(789, 303);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(130, 57);
             this.btnBack.TabIndex = 18;

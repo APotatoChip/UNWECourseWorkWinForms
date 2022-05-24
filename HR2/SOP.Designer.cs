@@ -51,6 +51,7 @@
             // 
             // btnBack
             // 
+            this.btnBack.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -66,17 +67,19 @@
             // 
             // sopTextBox
             // 
+            this.sopTextBox.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.sopTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.sopTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sopTextBox.ForeColor = System.Drawing.SystemColors.Window;
             this.sopTextBox.Location = new System.Drawing.Point(249, 71);
             this.sopTextBox.Name = "sopTextBox";
-            this.sopTextBox.Size = new System.Drawing.Size(100, 22);
+            this.sopTextBox.Size = new System.Drawing.Size(232, 22);
             this.sopTextBox.TabIndex = 18;
             this.sopTextBox.TextChanged += new System.EventHandler(this.sopTextBox_TextChanged);
             // 
             // SOPlabel
             // 
+            this.SOPlabel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.SOPlabel.AutoSize = true;
             this.SOPlabel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.SOPlabel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -113,6 +116,7 @@
             // 
             // candidatesDataGridView
             // 
+            this.candidatesDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.candidatesDataGridView.AutoGenerateColumns = false;
             this.candidatesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.candidatesDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;

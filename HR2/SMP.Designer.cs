@@ -66,6 +66,7 @@
             // 
             // cbJobtitle
             // 
+            this.cbJobtitle.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbJobtitle.DataSource = this.jobBindingSource;
             this.cbJobtitle.DisplayMember = "Title";
             this.cbJobtitle.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -88,6 +89,7 @@
             // 
             // cbStatus
             // 
+            this.cbStatus.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbStatus.DataSource = this.statusBindingSource1;
             this.cbStatus.DisplayMember = "Status";
             this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -116,6 +118,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -127,6 +130,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
@@ -160,6 +164,7 @@
             // 
             // candidatesDataGridView
             // 
+            this.candidatesDataGridView.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.candidatesDataGridView.AutoGenerateColumns = false;
             this.candidatesDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.candidatesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -238,6 +243,7 @@
             // 
             // button_Excel
             // 
+            this.button_Excel.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button_Excel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.button_Excel.FlatAppearance.BorderSize = 0;
             this.button_Excel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -253,14 +259,15 @@
             // 
             // button_Clear
             // 
+            this.button_Clear.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button_Clear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.button_Clear.FlatAppearance.BorderSize = 0;
             this.button_Clear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Clear.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Clear.ForeColor = System.Drawing.Color.White;
-            this.button_Clear.Location = new System.Drawing.Point(323, 56);
+            this.button_Clear.Location = new System.Drawing.Point(323, 47);
             this.button_Clear.Name = "button_Clear";
-            this.button_Clear.Size = new System.Drawing.Size(75, 28);
+            this.button_Clear.Size = new System.Drawing.Size(94, 41);
             this.button_Clear.TabIndex = 7;
             this.button_Clear.Text = "Clear";
             this.button_Clear.UseVisualStyleBackColor = false;
@@ -268,14 +275,15 @@
             // 
             // button_Search
             // 
+            this.button_Search.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button_Search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(120)))), ((int)(((byte)(138)))));
             this.button_Search.FlatAppearance.BorderSize = 0;
             this.button_Search.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Search.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Search.ForeColor = System.Drawing.Color.White;
-            this.button_Search.Location = new System.Drawing.Point(323, 109);
+            this.button_Search.Location = new System.Drawing.Point(323, 101);
             this.button_Search.Name = "button_Search";
-            this.button_Search.Size = new System.Drawing.Size(75, 26);
+            this.button_Search.Size = new System.Drawing.Size(94, 41);
             this.button_Search.TabIndex = 8;
             this.button_Search.Text = "Search";
             this.button_Search.UseVisualStyleBackColor = false;
@@ -287,6 +295,7 @@
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

@@ -28,4 +28,4 @@ C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.JobsAED.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.SOP.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.JobCandidatesMD.resources
 C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.JobInterviewsMD.resources
-C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.mainScreen.resources
+C:\Users\LENOVO\Downloads\HR2\HR2\obj\Debug\HR2.hr2.resources

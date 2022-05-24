@@ -205,7 +205,7 @@
             this.jobBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.jobBindingNavigator.Name = "jobBindingNavigator";
             this.jobBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.jobBindingNavigator.Size = new System.Drawing.Size(1232, 31);
+            this.jobBindingNavigator.Size = new System.Drawing.Size(1232, 27);
             this.jobBindingNavigator.TabIndex = 0;
             this.jobBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -215,13 +215,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 28);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -231,7 +231,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -240,7 +240,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -249,13 +249,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -271,7 +271,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -279,7 +279,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -288,27 +288,27 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // jobBindingNavigatorSaveItem
             // 
             this.jobBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.jobBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("jobBindingNavigatorSaveItem.Image")));
             this.jobBindingNavigatorSaveItem.Name = "jobBindingNavigatorSaveItem";
-            this.jobBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
+            this.jobBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
             this.jobBindingNavigatorSaveItem.Text = "Save Data";
             this.jobBindingNavigatorSaveItem.Click += new System.EventHandler(this.jobBindingNavigatorSaveItem_Click);
             // 
             // jobIDTextBox
             // 
             this.jobIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "JobID", true));
-            this.jobIDTextBox.Location = new System.Drawing.Point(178, 83);
+            this.jobIDTextBox.Location = new System.Drawing.Point(219, 86);
             this.jobIDTextBox.Name = "jobIDTextBox";
             this.jobIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.jobIDTextBox.TabIndex = 2;
@@ -316,7 +316,7 @@
             // titleTextBox
             // 
             this.titleTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Title", true));
-            this.titleTextBox.Location = new System.Drawing.Point(178, 111);
+            this.titleTextBox.Location = new System.Drawing.Point(219, 114);
             this.titleTextBox.Name = "titleTextBox";
             this.titleTextBox.Size = new System.Drawing.Size(100, 22);
             this.titleTextBox.TabIndex = 4;
@@ -324,7 +324,7 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(178, 139);
+            this.descriptionTextBox.Location = new System.Drawing.Point(219, 142);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(100, 22);
             this.descriptionTextBox.TabIndex = 6;
@@ -332,7 +332,7 @@
             // numberOfCandidatesTextBox
             // 
             this.numberOfCandidatesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "NumberOfCandidates", true));
-            this.numberOfCandidatesTextBox.Location = new System.Drawing.Point(178, 167);
+            this.numberOfCandidatesTextBox.Location = new System.Drawing.Point(219, 170);
             this.numberOfCandidatesTextBox.Name = "numberOfCandidatesTextBox";
             this.numberOfCandidatesTextBox.Size = new System.Drawing.Size(100, 22);
             this.numberOfCandidatesTextBox.TabIndex = 8;
@@ -340,7 +340,7 @@
             // salaryTextBox
             // 
             this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "Salary", true));
-            this.salaryTextBox.Location = new System.Drawing.Point(178, 195);
+            this.salaryTextBox.Location = new System.Drawing.Point(219, 198);
             this.salaryTextBox.Name = "salaryTextBox";
             this.salaryTextBox.Size = new System.Drawing.Size(100, 22);
             this.salaryTextBox.TabIndex = 10;
@@ -348,7 +348,7 @@
             // interviewIDTextBox
             // 
             this.interviewIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.jobBindingSource, "InterviewID", true));
-            this.interviewIDTextBox.Location = new System.Drawing.Point(178, 223);
+            this.interviewIDTextBox.Location = new System.Drawing.Point(219, 226);
             this.interviewIDTextBox.Name = "interviewIDTextBox";
             this.interviewIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.interviewIDTextBox.TabIndex = 12;
@@ -372,12 +372,13 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.candidatesDataGridView.DataSource = this.candidatesBindingSource;
-            this.candidatesDataGridView.Location = new System.Drawing.Point(417, 87);
+            this.candidatesDataGridView.Location = new System.Drawing.Point(417, 86);
             this.candidatesDataGridView.Name = "candidatesDataGridView";
             this.candidatesDataGridView.RowHeadersWidth = 51;
             this.candidatesDataGridView.RowTemplate.Height = 24;
-            this.candidatesDataGridView.Size = new System.Drawing.Size(478, 324);
+            this.candidatesDataGridView.Size = new System.Drawing.Size(766, 324);
             this.candidatesDataGridView.TabIndex = 13;
+            this.candidatesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.candidatesDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -443,7 +444,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(765, 443);
+            this.button1.Location = new System.Drawing.Point(1053, 442);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 57);
             this.button1.TabIndex = 31;
@@ -451,7 +452,7 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // MD
+            // JobCandidatesMD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -473,7 +474,7 @@
             this.Controls.Add(this.interviewIDTextBox);
             this.Controls.Add(this.jobBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "MD";
+            this.Name = "JobCandidatesMD";
             this.Text = "MD";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MD_Load);

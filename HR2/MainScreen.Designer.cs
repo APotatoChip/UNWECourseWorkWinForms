@@ -1,6 +1,6 @@
 ﻿namespace HR2
 {
-    partial class mainScreen
+    partial class hr2
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@
             this.candidatesFormBtn.Location = new System.Drawing.Point(416, 144);
             this.candidatesFormBtn.Margin = new System.Windows.Forms.Padding(4);
             this.candidatesFormBtn.Name = "candidatesFormBtn";
-            this.candidatesFormBtn.Size = new System.Drawing.Size(288, 58);
+            this.candidatesFormBtn.Size = new System.Drawing.Size(250, 58);
             this.candidatesFormBtn.TabIndex = 1;
             this.candidatesFormBtn.Text = "Candidates Form";
             this.candidatesFormBtn.UseVisualStyleBackColor = false;
@@ -88,7 +88,7 @@
             this.SMP.Location = new System.Drawing.Point(416, 405);
             this.SMP.Margin = new System.Windows.Forms.Padding(4);
             this.SMP.Name = "SMP";
-            this.SMP.Size = new System.Drawing.Size(288, 58);
+            this.SMP.Size = new System.Drawing.Size(250, 58);
             this.SMP.TabIndex = 2;
             this.SMP.Text = "Search by Multiple Params";
             this.SMP.UseVisualStyleBackColor = false;
@@ -101,7 +101,7 @@
             this.SOP.Location = new System.Drawing.Point(416, 471);
             this.SOP.Margin = new System.Windows.Forms.Padding(4);
             this.SOP.Name = "SOP";
-            this.SOP.Size = new System.Drawing.Size(288, 58);
+            this.SOP.Size = new System.Drawing.Size(250, 58);
             this.SOP.TabIndex = 4;
             this.SOP.Text = "Search by One Param";
             this.SOP.UseVisualStyleBackColor = false;
@@ -114,7 +114,7 @@
             this.jobsFormBtn.Location = new System.Drawing.Point(416, 210);
             this.jobsFormBtn.Margin = new System.Windows.Forms.Padding(4);
             this.jobsFormBtn.Name = "jobsFormBtn";
-            this.jobsFormBtn.Size = new System.Drawing.Size(288, 58);
+            this.jobsFormBtn.Size = new System.Drawing.Size(250, 58);
             this.jobsFormBtn.TabIndex = 7;
             this.jobsFormBtn.Text = "Jobs Form";
             this.jobsFormBtn.UseVisualStyleBackColor = false;
@@ -139,7 +139,7 @@
             this.jobCandidatesBtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobCandidatesBtn.Location = new System.Drawing.Point(416, 276);
             this.jobCandidatesBtn.Name = "jobCandidatesBtn";
-            this.jobCandidatesBtn.Size = new System.Drawing.Size(288, 58);
+            this.jobCandidatesBtn.Size = new System.Drawing.Size(250, 58);
             this.jobCandidatesBtn.TabIndex = 10;
             this.jobCandidatesBtn.Text = "Job Candidates MD";
             this.jobCandidatesBtn.UseVisualStyleBackColor = false;
@@ -165,13 +165,13 @@
             this.jobInterviewsbtn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobInterviewsbtn.Location = new System.Drawing.Point(416, 340);
             this.jobInterviewsbtn.Name = "jobInterviewsbtn";
-            this.jobInterviewsbtn.Size = new System.Drawing.Size(288, 58);
+            this.jobInterviewsbtn.Size = new System.Drawing.Size(250, 58);
             this.jobInterviewsbtn.TabIndex = 14;
             this.jobInterviewsbtn.Text = "Job Interviews MD";
             this.jobInterviewsbtn.UseVisualStyleBackColor = false;
             this.jobInterviewsbtn.Click += new System.EventHandler(this.jobInterviewsbtn_Click);
             // 
-            // mainScreen
+            // hr2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -189,7 +189,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "mainScreen";
+            this.Name = "hr2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Screen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

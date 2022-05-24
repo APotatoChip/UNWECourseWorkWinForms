@@ -12,8 +12,8 @@ namespace HR2
 {
     public partial class SOP : Form
     {
-        mainScreen mainScreenForm;
-        public SOP(mainScreen formMainScreen)
+        hr2 mainScreenForm;
+        public SOP(hr2 formMainScreen)
         {
             InitializeComponent();
             mainScreenForm = formMainScreen;

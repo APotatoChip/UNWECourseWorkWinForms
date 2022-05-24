@@ -12,8 +12,8 @@ namespace HR2
 {
     public partial class JobInterviewsMD : Form
     {
-        mainScreen mainScreenForm;
-        public JobInterviewsMD(mainScreen formMainScreen)
+        hr2 mainScreenForm;
+        public JobInterviewsMD(hr2 formMainScreen)
         {
             InitializeComponent();
             mainScreenForm = formMainScreen;
@@ -36,7 +36,14 @@ namespace HR2
             this.interviewDataGridView.ColumnHeadersDefaultCellStyle.Font = new Font("Century Gothic", 8);
             this.interviewDataGridView.DefaultCellStyle.Font = new Font("Century Gothic", 10);
             this.interviewDataGridView.DefaultCellStyle.ForeColor = Color.FromArgb(41, 44, 51);
-
+            sizeDGV(interviewDataGridView);
+        }
+        void sizeDGV(DataGridView dgv)
+        {
+            DataGridViewElementStates states = DataGridViewElementStates.None;
+            dgv.ScrollBars = ScrollBars.Vertical;
+            var totalWidth = dgv.Columns.GetColumnsWidth(states) + dgv.RowHeadersWidth;
+            dgv.ClientSize = new Size(totalWidth, 266);
         }
 
         private void btnBack_Click(object sender, EventArgs e)

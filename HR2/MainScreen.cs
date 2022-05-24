@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace HR2
 {
-    public partial class mainScreen : Form
+    public partial class hr2 : Form
     {
         SMP smp;
         SOP sop;
@@ -18,7 +18,7 @@ namespace HR2
         JobInterviewsMD jobInterviewsMD;
         CandidatesAED candidatesAED;
         JobsAED jobsAED;
-        public mainScreen()
+        public hr2()
         {
             InitializeComponent();
             smp = new SMP(this);
@@ -44,13 +44,19 @@ namespace HR2
             Controls.OfType<MdiClient>().FirstOrDefault().BackColor = Color.FromArgb(41, 44, 51);
             menuLabel.Left = (this.ClientSize.Width - menuLabel.Width) / 2;
             candidatesFormBtn.Left = (this.ClientSize.Width - candidatesFormBtn.Width) / 2;
-            SMP.Left = (this.ClientSize.Width - SMP.Width) / 2;
-            SOP.Left = (this.ClientSize.Width - SOP.Width) / 2;
             jobsFormBtn.Left = (this.ClientSize.Width - jobsFormBtn.Width) / 2;
             jobCandidatesBtn.Left = (this.ClientSize.Width - jobCandidatesBtn.Width) / 2;
             jobInterviewsbtn.Left = (this.ClientSize.Width - jobInterviewsbtn.Width) / 2;
+            SMP.Left = (this.ClientSize.Width - SMP.Width) / 2;
+            SOP.Left = (this.ClientSize.Width - SOP.Width) / 2;
             exitBtn.Left = (this.ClientSize.Width - exitBtn.Width -2) ;
-            //label3.Top = (this.ClientSize.Height - label3.Height) / 2;
+            menuLabel.Top = (this.ClientSize.Height  - 750);
+            candidatesFormBtn.Top = (this.ClientSize.Height - 650);
+            jobsFormBtn.Top = (this.ClientSize.Height - 570);
+            jobCandidatesBtn.Top = (this.ClientSize.Height - 490);
+            jobInterviewsbtn.Top = (this.ClientSize.Height - 410);
+            SMP.Top = (this.ClientSize.Height - 330);
+            SOP.Top = (this.ClientSize.Height - 250);
 
         }
 

@@ -315,7 +315,7 @@
             // candidateIDTextBox
             // 
             this.candidateIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "CandidateID", true));
-            this.candidateIDTextBox.Location = new System.Drawing.Point(126, 96);
+            this.candidateIDTextBox.Location = new System.Drawing.Point(168, 99);
             this.candidateIDTextBox.Name = "candidateIDTextBox";
             this.candidateIDTextBox.ReadOnly = true;
             this.candidateIDTextBox.Size = new System.Drawing.Size(100, 22);
@@ -324,7 +324,7 @@
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(126, 124);
+            this.nameTextBox.Location = new System.Drawing.Point(168, 127);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(100, 22);
             this.nameTextBox.TabIndex = 4;
@@ -332,7 +332,7 @@
             // phoneTextBox
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "Phone", true));
-            this.phoneTextBox.Location = new System.Drawing.Point(126, 152);
+            this.phoneTextBox.Location = new System.Drawing.Point(168, 155);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(100, 22);
             this.phoneTextBox.TabIndex = 6;
@@ -340,7 +340,7 @@
             // addressTextBox
             // 
             this.addressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "Address", true));
-            this.addressTextBox.Location = new System.Drawing.Point(126, 180);
+            this.addressTextBox.Location = new System.Drawing.Point(168, 183);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Size = new System.Drawing.Size(100, 22);
             this.addressTextBox.TabIndex = 8;
@@ -348,7 +348,7 @@
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(126, 208);
+            this.countryTextBox.Location = new System.Drawing.Point(168, 211);
             this.countryTextBox.Name = "countryTextBox";
             this.countryTextBox.Size = new System.Drawing.Size(100, 22);
             this.countryTextBox.TabIndex = 10;
@@ -356,7 +356,7 @@
             // jobIDTextBox
             // 
             this.jobIDTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "JobID", true));
-            this.jobIDTextBox.Location = new System.Drawing.Point(126, 236);
+            this.jobIDTextBox.Location = new System.Drawing.Point(168, 239);
             this.jobIDTextBox.Name = "jobIDTextBox";
             this.jobIDTextBox.Size = new System.Drawing.Size(100, 22);
             this.jobIDTextBox.TabIndex = 12;
@@ -364,7 +364,7 @@
             // statusTextBox
             // 
             this.statusTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.candidatesBindingSource, "Status", true));
-            this.statusTextBox.Location = new System.Drawing.Point(126, 264);
+            this.statusTextBox.Location = new System.Drawing.Point(168, 267);
             this.statusTextBox.Name = "statusTextBox";
             this.statusTextBox.Size = new System.Drawing.Size(100, 22);
             this.statusTextBox.TabIndex = 14;
@@ -383,12 +383,13 @@
             this.dataGridViewTextBoxColumn6,
             this.dataGridViewTextBoxColumn7});
             this.candidatesDataGridView.DataSource = this.candidatesBindingSource;
-            this.candidatesDataGridView.Location = new System.Drawing.Point(258, 69);
+            this.candidatesDataGridView.Location = new System.Drawing.Point(349, 60);
             this.candidatesDataGridView.Name = "candidatesDataGridView";
             this.candidatesDataGridView.RowHeadersWidth = 51;
             this.candidatesDataGridView.RowTemplate.Height = 24;
             this.candidatesDataGridView.Size = new System.Drawing.Size(818, 353);
             this.candidatesDataGridView.TabIndex = 15;
+            this.candidatesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.candidatesDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -455,7 +456,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(946, 445);
+            this.button1.Location = new System.Drawing.Point(1037, 445);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 57);
             this.button1.TabIndex = 31;
