@@ -183,6 +183,7 @@
             this.candidatesDataGridView.RowTemplate.Height = 24;
             this.candidatesDataGridView.Size = new System.Drawing.Size(935, 283);
             this.candidatesDataGridView.TabIndex = 5;
+            this.candidatesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.candidatesDataGridView_CellContentClick);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -295,13 +296,13 @@
             // 
             // button1
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(218)))), ((int)(((byte)(165)))), ((int)(((byte)(82)))));
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(836, 469);
+            this.button1.Location = new System.Drawing.Point(1135, 271);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(130, 57);
             this.button1.TabIndex = 31;

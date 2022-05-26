@@ -126,5 +126,10 @@ namespace HR2
             this.Hide();
             mainScreenForm.Show();
         }
+
+        private void candidatesDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
